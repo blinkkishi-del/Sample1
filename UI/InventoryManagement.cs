@@ -19,16 +19,6 @@ namespace UI
         }
 
 
-        private void InventoryManagement_Load(object sender, EventArgs e)
-        {
-            InitialState();
-            LoadCategories();
-            dgProducts.AutoGenerateColumns = true;
-            dgProducts.CellClick += dgProducts_CellClick;
-            cmbFilter.SelectedIndexChanged += cmbFilter_SelectedIndexChanged;
-        }
-
-
         private void LoadCategories()
         {
             List<string> categories = new List<string>()
@@ -353,6 +343,15 @@ namespace UI
             {
                 ClearFields();
             }
+        }
+
+        private void InventoryManagement_Load_1(object sender, EventArgs e)
+        {
+            InitialState();
+            LoadCategories();
+            dgProducts.AutoGenerateColumns = true;
+            dgProducts.CellClick += dgProducts_CellClick;
+            cmbFilter.SelectedIndexChanged += cmbFilter_SelectedIndexChanged;
         }
     }
 }

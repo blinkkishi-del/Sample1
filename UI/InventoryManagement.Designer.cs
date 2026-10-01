@@ -394,6 +394,7 @@
             Margin = new Padding(3, 2, 3, 2);
             Name = "InventoryManagement";
             Text = "InventoryManagement";
+            Load += InventoryManagement_Load_1;
             ((System.ComponentModel.ISupportInitialize)dgProducts).EndInit();
             ResumeLayout(false);
             PerformLayout();
